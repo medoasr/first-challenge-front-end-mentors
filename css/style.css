@@ -25,6 +25,7 @@
     padding: 20px;
     background-color: var(--Pale-blue);
     background-image: url(../images/pattern-background-mobile.svg);
+    background-size: cover;
     max-width: 100%;
     padding: 15px 15px;
     margin: 0 auto;
@@ -35,6 +36,7 @@
     width: 1440px;
     padding: 20px;
     background-image: url(../images/pattern-background-desktop.svg);
+    background-size: cover;
     background-color: var(--Pale-blue);
     max-width: 100%;
     padding: 50px;
