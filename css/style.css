@@ -1,0 +1,158 @@
+/* global variables */
+:root {
+  /* primary colors  */
+  --Pale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+  /* neutral */
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+  /* font  */
+  --size: 16px;
+  /* raidus  */
+  --main-rad: 15px;
+  /* main margin for sections */
+  --main-marg: 40px;
+}
+/* global styles */
+* {
+  box-sizing: border-box;
+  font-family: "Red Hat Display", sans-serif;
+}
+@media (max-width: 767px) {
+  .container {
+    width: 375px;
+    padding: 20px;
+    background-color: var(--Pale-blue);
+    background-image: url(../images/pattern-background-mobile.svg);
+    max-width: 100%;
+    padding: 15px 15px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    width: 1440px;
+    padding: 20px;
+    background-image: url(../images/pattern-background-desktop.svg);
+    background-color: var(--Pale-blue);
+    max-width: 100%;
+    padding: 50px;
+    margin: 0 auto;
+  }
+}
+/* start styling */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .card {
+  background-color: white;
+  text-align: center;
+  border-radius: var(--main-rad);
+  -webkit-border-radius: var(--main-rad);
+  -moz-border-radius: var(--main-rad);
+  -ms-border-radius: var(--main-rad);
+  -o-border-radius: var(--main-rad);
+}
+.container .card img {
+  max-width: 100%;
+  border-top-left-radius: var(--main-rad);
+  border-top-right-radius: var(--main-rad);
+}
+/* start text section  */
+.container .card .text {
+  padding: 15px 0;
+  margin-left: var(--main-marg);
+  margin-right: var(--main-marg);
+}
+.container .card .text h2 {
+  color: var(--Dark-blue);
+  text-transform: capitalize;
+  margin-bottom: 15px;
+}
+.container .card .text p {
+  line-height: 1.7;
+  font-size: var(--size);
+  color: var(--Desaturated-blue);
+  margin: 0;
+}
+/* start plan section  */
+.container .card .plan {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: var(--Very-pale-blue);
+  border-radius: var(--main-rad);
+  -webkit-border-radius: var(--main-rad);
+  -moz-border-radius: var(--main-rad);
+  -ms-border-radius: var(--main-rad);
+  -o-border-radius: var(--main-rad);
+  margin: 15px var(--main-marg);
+}
+.container .card .plan .price {
+  display: flex;
+}
+.container .card .plan .price .text-price {
+  margin-left: 15px;
+}
+.container .card .plan .price h3 {
+  color: var(--Dark-blue);
+  text-transform: capitalize;
+  margin: 0 0 7px 0;
+  font-size: var(--size);
+}
+.container .card .plan .price span {
+  font-size: var(--size);
+  color: var(--Desaturated-blue);
+  text-transform: capitalize;
+}
+.container .card .plan a {
+  display: block;
+  color: var(--Bright-blue);
+  text-transform: capitalize;
+  font-size: var(--size);
+}
+.container .card .plan a:hover {
+  text-decoration: none;
+  font-size: 15px;
+}
+/* words section  */
+.words {
+  margin: 15px var(--main-marg);
+  padding: 20px 0;
+}
+.words button {
+  padding: 20px 20px;
+  margin-bottom: 25px;
+  border: none;
+  border-radius: var(--main-rad);
+  -webkit-border-radius: var(--main-rad);
+  -moz-border-radius: var(--main-rad);
+  -ms-border-radius: var(--main-rad);
+  -o-border-radius: var(--main-rad);
+  background-color: var(--Bright-blue);
+  color: white;
+  display: block;
+  width: 100%;
+  box-shadow: 0px 11px 23px -11px var(--Bright-blue);
+  cursor: pointer;
+  font-size: var(--size);
+  font-weight: bold;
+}
+.words button:hover {
+  background-color: hsl(245, 75%, 52%, 0.7);
+  box-shadow: 0px 11px 23px -11px hsl(245, 75%, 52%, 0.7);
+}
+.words span {
+  cursor: pointer;
+  color: var(--Desaturated-blue);
+  font-size: var(--size);
+}
+.words span:hover {
+  color: var(--Dark-blue);
+  font-weight: bold;
+}
